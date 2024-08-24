@@ -391,9 +391,13 @@
     </div>
 
     <script>
-        console.log (document.querySelectorAll("img"));
+        // console.log (document.querySelectorAll("img"));
 
         document.querySelectorAll("img").forEach(elem => {
+            elem.addEventListener("mouseenter", event => {
+                
+                event.target.style.width = "300px"
+            })
             console.log(elem.src)
         })
     </script>
