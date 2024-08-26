@@ -392,13 +392,17 @@
 
     <script>
         // console.log (document.querySelectorAll("img"));
+        for (let index = 366; index <= 730; index++) {
+            console.log(`https://raw.githubusercontent.com/deep-vinci/cool-wallpapers/main/dist/${index}-desktop.png`)
 
+            let imageContainer = document.createElement("div");
+        }
         document.querySelectorAll("img").forEach(elem => {
             elem.addEventListener("mouseenter", event => {
                 
-                event.target.style.width = "300px"
+                // event.target.style.width = "300px"
             })
-            console.log(elem.src)
+            // console.log(elem.src)
         })
     </script>
 </body>
